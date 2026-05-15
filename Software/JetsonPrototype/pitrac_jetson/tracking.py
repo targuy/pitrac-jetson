@@ -2,7 +2,7 @@
 
 from collections.abc import Sequence
 from dataclasses import dataclass
-from math import atan2, hypot
+from math import atan2, hypot, pi
 
 from .calibration import CalibrationProfile
 from .vision import DetectionSample
@@ -38,7 +38,6 @@ class Basic2DTracker:
 
         return TrackEstimate(
             speed_mps=hypot(dx_m, dy_m) / elapsed_s,
-            angle_deg=atan2(dy_m, dx_m) * 180.0 / 3.141592653589793,
+            angle_deg=atan2(dy_m, dx_m) * 180.0 / pi,
             sample_count=len(ordered),
         )
-
