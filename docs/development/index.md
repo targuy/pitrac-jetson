@@ -63,6 +63,7 @@ Verified subcommands include:
 The following documentation pages are available:
 
 **[Overview]({% link development/overview.md %})** - Architecture and system components  
+**[Jetson Incremental Architecture]({% link development/jetson-incremental-architecture.md %})** - Jetson-first design path from ball sensors to full launch-monitor pipeline  
 **[Configuration Management]({% link development/configuration.md %})** - Configuration system details  
 **[Packaging Guide]({% link development/packaging.md %})** - Creating APT packages  
 **[CLI Interface]({% link development/cli-interface.md %})** - `pitrac` command reference  
